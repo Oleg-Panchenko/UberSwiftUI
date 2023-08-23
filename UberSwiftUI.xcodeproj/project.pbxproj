@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04537A92A969091009C2197 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04537A82A969091009C2197 /* HomeView.swift */; };
+		D04537AB2A969149009C2197 /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04537AA2A969149009C2197 /* UberMapViewRepresentable.swift */; };
+		D04537AD2A969609009C2197 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04537AC2A969609009C2197 /* LocationManager.swift */; };
 		D06756102A953DAD00433934 /* UberSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */; };
-		D06756122A953DAD00433934 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06756112A953DAD00433934 /* ContentView.swift */; };
 		D06756142A953DAD00433934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06756132A953DAD00433934 /* Assets.xcassets */; };
 		D06756172A953DAD00433934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06756162A953DAD00433934 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D04537A82A969091009C2197 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D04537AA2A969149009C2197 /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
+		D04537AC2A969609009C2197 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D067560C2A953DAD00433934 /* UberSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSwiftUIApp.swift; sourceTree = "<group>"; };
-		D06756112A953DAD00433934 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D06756132A953DAD00433934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06756162A953DAD00433934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04537A12A969048009C2197 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D04537A22A96904A009C2197 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D04537AC2A969609009C2197 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D04537A32A96904B009C2197 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D04537A42A96904C009C2197 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D04537A52A96904D009C2197 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D04537A72A969052009C2197 /* Views */,
+				D04537A62A969051009C2197 /* ViewModel */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D04537A62A969051009C2197 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D04537A72A969052009C2197 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D04537A82A969091009C2197 /* HomeView.swift */,
+				D04537AA2A969149009C2197 /* UberMapViewRepresentable.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		D06756032A953DAD00433934 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +110,11 @@
 		D067560E2A953DAD00433934 /* UberSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */,
-				D06756112A953DAD00433934 /* ContentView.swift */,
+				D04537A42A96904C009C2197 /* App */,
+				D04537A52A96904D009C2197 /* Core */,
+				D04537A32A96904B009C2197 /* Extensions */,
+				D04537A22A96904A009C2197 /* Managers */,
+				D04537A12A969048009C2197 /* Models */,
 				D06756132A953DAD00433934 /* Assets.xcassets */,
 				D06756152A953DAD00433934 /* Preview Content */,
 			);
@@ -137,8 +199,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D06756122A953DAD00433934 /* ContentView.swift in Sources */,
+				D04537AD2A969609009C2197 /* LocationManager.swift in Sources */,
 				D06756102A953DAD00433934 /* UberSwiftUIApp.swift in Sources */,
+				D04537AB2A969149009C2197 /* UberMapViewRepresentable.swift in Sources */,
+				D04537A92A969091009C2197 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +334,7 @@
 				DEVELOPMENT_TEAM = WDRKNT57U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +364,7 @@
 				DEVELOPMENT_TEAM = WDRKNT57U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow us to access your location to find you nearby drivers and rides";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
