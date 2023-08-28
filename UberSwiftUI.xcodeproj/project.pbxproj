@@ -13,6 +13,8 @@
 		D06756102A953DAD00433934 /* UberSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */; };
 		D06756142A953DAD00433934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06756132A953DAD00433934 /* Assets.xcassets */; };
 		D06756172A953DAD00433934 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06756162A953DAD00433934 /* Preview Assets.xcassets */; };
+		D0CA0C502A9D2E34009894DC /* LocationSearchActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA0C4F2A9D2E34009894DC /* LocationSearchActivationView.swift */; };
+		D0CA0C522A9D300A009894DC /* MapViewActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA0C512A9D300A009894DC /* MapViewActionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		D067560F2A953DAD00433934 /* UberSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberSwiftUIApp.swift; sourceTree = "<group>"; };
 		D06756132A953DAD00433934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06756162A953DAD00433934 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0CA0C4F2A9D2E34009894DC /* LocationSearchActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchActivationView.swift; sourceTree = "<group>"; };
+		D0CA0C512A9D300A009894DC /* MapViewActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewActionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +73,8 @@
 		D04537A52A96904D009C2197 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D04537A72A969052009C2197 /* Views */,
-				D04537A62A969051009C2197 /* ViewModel */,
+				D0CA0C4C2A9D2D46009894DC /* LocationSearch */,
+				D0CA0C4B2A9D2D37009894DC /* Home */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -87,6 +91,7 @@
 			children = (
 				D04537A82A969091009C2197 /* HomeView.swift */,
 				D04537AA2A969149009C2197 /* UberMapViewRepresentable.swift */,
+				D0CA0C512A9D300A009894DC /* MapViewActionButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,39 @@
 				D06756162A953DAD00433934 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0CA0C4B2A9D2D37009894DC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D04537A72A969052009C2197 /* Views */,
+				D04537A62A969051009C2197 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D0CA0C4C2A9D2D46009894DC /* LocationSearch */ = {
+			isa = PBXGroup;
+			children = (
+				D0CA0C4D2A9D2DE9009894DC /* View */,
+				D0CA0C4E2A9D2DED009894DC /* ViewModel */,
+			);
+			path = LocationSearch;
+			sourceTree = "<group>";
+		};
+		D0CA0C4D2A9D2DE9009894DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0CA0C4F2A9D2E34009894DC /* LocationSearchActivationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0CA0C4E2A9D2DED009894DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +238,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D04537AD2A969609009C2197 /* LocationManager.swift in Sources */,
+				D0CA0C522A9D300A009894DC /* MapViewActionButton.swift in Sources */,
 				D06756102A953DAD00433934 /* UberSwiftUIApp.swift in Sources */,
 				D04537AB2A969149009C2197 /* UberMapViewRepresentable.swift in Sources */,
 				D04537A92A969091009C2197 /* HomeView.swift in Sources */,
+				D0CA0C502A9D2E34009894DC /* LocationSearchActivationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
